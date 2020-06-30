@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="public int getX()"/>
+		<list key="findhistory">
+			<item value="public int getX()"/>
+			<item value="for(int i = 0; i &lt; do_zamiany.length(); i++)"/>
+		</list>
+	</section>
+</section>

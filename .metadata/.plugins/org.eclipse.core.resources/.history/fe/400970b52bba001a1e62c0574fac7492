@@ -1,0 +1,19 @@
+
+public class SzkolaAdvanced {
+
+	public static void main(String[] args) {
+		UczenSzkolyAdvanced uczen = new UczenSzkolyAdvanced();
+		uczen.Ustaw_Imie();
+	//	uczen.Ustaw_Reszte();
+		
+		System.out.print("Dodano nowego ucznia! \n"
+				+ "Imiê: " + uczen.imie
+				+ "Nazwisko: " + uczen.nazwisko
+				+ "Pesel: " + uczen.pesel
+				+ "Szkola: " + uczen.Nazwa_Szkoly
+				+ "Klasa: " + uczen.klasa
+				+ "GRATULACJE!"
+				);
+	}
+
+}

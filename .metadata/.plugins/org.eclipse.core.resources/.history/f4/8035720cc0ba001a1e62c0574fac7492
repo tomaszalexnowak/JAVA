@@ -1,0 +1,35 @@
+import java.io.*;
+
+public class liczZnakiSlowa {
+
+	public static void main(String[] args) throws IOException {
+		File plik = new File("C:\\test.txt");
+		FileInputStream strumien = new FileInputStream(plik);
+		InputStreamReader podajka = new InputStreamReader(strumien);
+		BufferedReader odczyt = new BufferedReader(podajka);
+		System.out.println(plik.exists());
+		
+		String linie;
+		int slowa = 0;
+		int znaki = 0;
+		int spacje = 0;
+		
+		try {
+			while((linie = odczyt.readLine()) != null)
+			{
+				znaki += linie.length();
+				String[] listaSlow = linie.split("\\s+");
+				slowa += listaSlow.length;
+				spacje = slowa - 1;
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println(znaki);
+		System.out.println(slowa);
+		System.out.println(spacje);
+
+	}
+
+}

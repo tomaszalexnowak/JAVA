@@ -1,0 +1,12 @@
+public class KlasaStatyczna {
+	int x;
+	
+	KlasaStatyczna(int a, int b)
+	{
+		x = a + b;
+	}
+	
+	static {
+		System.out.println("Wynik dodawania ");
+	}
+}

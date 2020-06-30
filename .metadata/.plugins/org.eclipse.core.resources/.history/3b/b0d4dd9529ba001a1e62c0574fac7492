@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class UczenSzkolyAdvanced extends UczeñKlasy {
+	void Ustaw_Imie()
+	{
+		Scanner imiennik = new Scanner(System.in);
+		System.out.println("Witaj, podaj imiê ucznia:");
+		String imie = imiennik.nextLine();
+		this.imie = imie;
+		
+		
+	}
+}

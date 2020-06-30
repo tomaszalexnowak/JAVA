@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class UczenSzkolyAdvanced extends UczeñKlasy {
+	void Ustaw_Imie()
+	{
+		Scanner imiennik = new Scanner(System.in);
+		System.out.println("Witaj, podaj imiê ucznia:");
+		String imie = imiennik.nextLine();
+		this.imie = imie;
+	}
+	void Ustaw_Reszte()
+	{
+		Scanner dzienniczek = new Scanner(System.in);
+			System.out.println("Podaj nazwisko:");
+				String nazwisko = dzienniczek.nextLine();
+				this.nazwisko = nazwisko;
+			System.out.println("Podaj nazwisko:");
+				String pesel = dzienniczek.nextLine();
+				this.pesel = pesel;
+			System.out.println("Podaj nazwisko:");
+				String szkola = dzienniczek.nextLine();
+				this.Nazwa_Szkoly = szkola;
+			System.out.println("Podaj nazwisko:");
+				String klasa = dzienniczek.nextLine();
+				this.klasa = klasa;
+		dzienniczek.close();
+	}
+}

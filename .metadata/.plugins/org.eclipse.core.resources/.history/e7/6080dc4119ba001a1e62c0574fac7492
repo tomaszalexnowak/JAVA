@@ -1,0 +1,21 @@
+public class Test_klas {
+
+	public static void main(String[] args) {
+		String test = "Ala ma kota";
+		KlasaBazowa klasaBazowa = new KlasaBazowa();
+		KlasaRozszerzona kr1 = new KlasaRozszerzona(5);
+		KlasaRozszerzona kr2 = new KlasaRozszerzona(10);
+		KlasaMulti pusta = new KlasaMulti();
+		KlasaMulti tekst = new KlasaMulti(test);
+		KlasaMulti multi = new KlasaMulti(5,3);
+		System.out.println("Pusta klasa: " + klasaBazowa.toString());
+		System.out.println("Klasa z jednym konstruktorem: " + kr1.x);
+		System.out.println("Klasa z jednym konstruktorem: " + kr2.x);
+		System.out.println("Klasa z wieloma konstruktorami, ale bez tekstu: " + multi.a);
+		System.out.println("Klasa z wieloma konstruktorami, ale bez tekstu: " + multi.b);
+		System.out.println("Klasa z wieloma konstruktorami, ale bez tekstu: " + multi.w);
+		System.out.println("Klasa z wieloma konstruktorami, ale bez liczb: " + tekst.a);
+		System.out.println("Klasa z wieloma konstruktorami, ale bez liczb: " + tekst.w);
+	}
+
+}

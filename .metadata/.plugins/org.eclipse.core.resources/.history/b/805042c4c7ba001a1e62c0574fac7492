@@ -1,0 +1,54 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class testowanie {
+
+	public static void main(String[] args) throws IOException {
+		
+		File plik = new File("C:\\test.txt");
+		FileInputStream strumien = new FileInputStream(plik);
+		InputStreamReader podajka = new InputStreamReader(strumien);
+		BufferedReader odczyt = new BufferedReader(podajka);
+		
+		char spacja = ' ';
+		char tab = '\t';
+		char enter = '\n';
+		int wynik=0;
+		String linie;
+		
+		while((linie = odczyt.readLine()) != null)
+		{
+			for(int i = 0; i < linie.length(); i++)
+			{
+				if(enter == linie.charAt(i) || tab == linie.charAt(i) || spacja == linie.charAt(i))
+				{
+					wynik++;
+				}
+			}
+		}
+		System.out.println("Liczonko: " +wynik +".");		
+		
+		
+		
+		String a = "test test  test	 test "
+				+ "			    k +";
+		
+		char spr = ' ';
+		char spr2 = '\t';
+		char spr3 = '\n';
+		int suma=0;
+		for(int i = 0; i < a.length(); i++)
+		{
+			if(spr == a.charAt(i) || spr2 == a.charAt(i))
+			{
+				suma++;
+			}
+		}
+		System.out.print(suma);
+
+	}
+
+}

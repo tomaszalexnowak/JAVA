@@ -1,0 +1,13 @@
+
+public class testowanie {
+
+	public static void main(String[] args) {
+		
+		String a = "test test  test test ";
+		
+		a.trim();
+		
+		System.out.print(a);
+	}
+
+}

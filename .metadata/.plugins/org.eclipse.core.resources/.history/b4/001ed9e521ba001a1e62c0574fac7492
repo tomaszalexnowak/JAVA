@@ -1,0 +1,14 @@
+
+public class Szkolka {
+
+	public static void main(String[] args) {
+		Uczen podstawowy = new Uczen();
+
+		podstawowy.imie = "Tomasz";
+		podstawowy.nazwisko = "Tester";
+		podstawowy.pesel = "0700800900";
+		
+		System.out.println(podstawowy.imie + " " + podstawowy.nazwisko + " " + podstawowy.pesel)
+	}
+
+}

@@ -1,0 +1,8 @@
+public class KlasaRozszerzona {
+	int x= 5;
+	
+	public KlasaRozszerzona(int i)
+	{
+		x = i;
+	}
+}

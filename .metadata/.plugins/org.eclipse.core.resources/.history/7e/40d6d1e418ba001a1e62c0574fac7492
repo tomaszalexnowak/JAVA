@@ -1,0 +1,20 @@
+public class Test_klas {
+
+	public static void main(String[] args) {
+		String test = "Ala ma kota";
+		KlasaBazowa klasaBazowa = new KlasaBazowa();
+		KlasaRozszerzona kr1 = new KlasaRozszerzona(5);
+		KlasaRozszerzona kr2 = new KlasaRozszerzona(10);
+		KlasaMulti pusta = new KlasaMulti();
+		KlasaMulti tekst = new KlasaMulti(test);
+		KlasaMulti multi = new KlasaMulti(5,3);
+		System.out.println(klasaBazowa.toString());
+		System.out.println(kr1.x);
+		System.out.println(kr2.x);
+		System.out.println(multi.a);
+		System.out.println(multi.b);
+		System.out.println(multi.w);
+		
+	}
+
+}

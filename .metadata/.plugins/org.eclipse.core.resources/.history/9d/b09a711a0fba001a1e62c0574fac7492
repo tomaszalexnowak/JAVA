@@ -1,0 +1,13 @@
+public class Test_klas {
+
+	public static void main(String[] args) {
+		KlasaBazowa klasaBazowa = new KlasaBazowa();
+		KlasaRozszerzona kr1 = new KlasaRozszerzona(5);
+		KlasaRozszerzona kr2 = new KlasaRozszerzona(10);
+
+		System.out.println(klasaBazowa);
+		System.out.println(kr1);
+		System.out.println(kr2);
+	}
+
+}

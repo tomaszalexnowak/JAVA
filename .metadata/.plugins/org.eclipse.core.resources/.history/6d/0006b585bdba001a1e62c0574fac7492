@@ -1,0 +1,27 @@
+
+public class Blednik2 {
+
+	public static void main(String[] args) throws Exception {
+		MetodaDlugosc test = new MetodaDlugosc();
+
+		//zadanie 6
+		//try {
+		//	test.Dlugosc(null);
+		//}
+		//catch(NullPointerException e)
+		//{
+		//	e.printStackTrace(System.out);
+		//	throw new Exception();
+		//}
+		
+		//zadanie 7
+		try {
+			test.Dlugosc(null);
+		}
+		catch(NullPointerException e)
+		{
+			e.printStackTrace(System.out);
+			throw new Exception(e);
+		}
+	}
+}

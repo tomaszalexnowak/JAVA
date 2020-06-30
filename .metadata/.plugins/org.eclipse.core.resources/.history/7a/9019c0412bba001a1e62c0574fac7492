@@ -1,0 +1,11 @@
+
+public class SzkolaAdvanced {
+
+	public static void main(String[] args) {
+		UczenSzkolyAdvanced uczen = new UczenSzkolyAdvanced();
+		uczen.Ustaw_Imie();
+		
+		System.out.print(uczen.imie);
+	}
+
+}

@@ -1,0 +1,13 @@
+
+public class Blednik {
+
+	public static void main(String[] args) {
+		
+		//test
+		String przyklad = "abcdef";
+		MetodaDlugosc test = new MetodaDlugosc();
+		test.Dlugosc(przyklad);
+
+	}
+
+}

@@ -1,0 +1,10 @@
+public class KlasaRozszerzona {
+	int x;
+	
+	public KlasaRozszerzona(int i)
+	{
+		x = i;
+	}
+	
+	return x * x;
+}
